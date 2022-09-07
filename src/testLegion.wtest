@@ -19,7 +19,7 @@ test "Los caramelos son la suma de los de sus integrantes" {
 	macaria.recibirCaramelos(8) 
 	pancracio.recibirCaramelos(4)
 	legionDelTerror.agregarIntegrantes([pedro,macaria,pancracio])
-	assert.equals(10,legionDelTerror.caramelos())
+	assert.equals(13,legionDelTerror.caramelos())
 }
 
 
@@ -49,8 +49,8 @@ test "La cantidad de caramelos recibida es correcta" {
 
 test "Los 2 con mas caramelos" {
 	pancracio.recibirCaramelos(10)
-	macaria.recibirCaramelos(10)
-	pedro.recibirCaramelos(10)
+	macaria.recibirCaramelos(15)
+	pedro.recibirCaramelos(20)
 	barrio.chicos( [pedro,macaria,pancracio])
 	assert.equals([pancracio,macaria],barrio.chicosConMasCaramelos(2))
 }
